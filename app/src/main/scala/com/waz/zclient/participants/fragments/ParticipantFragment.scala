@@ -220,7 +220,7 @@ class ParticipantFragment extends ManagerFragment
   }
 
   private def showUser(userId: UserId): Unit = {
-    verbose(l"onShowUser($userId)")
+    verbose(l"[DEEP] onShowUser($userId)")
     convScreenController.showUser(userId)
     participantsController.selectParticipant(userId)
 
